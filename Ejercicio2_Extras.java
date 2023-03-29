@@ -1,0 +1,34 @@
+package EstructurasDeControl;
+
+
+/**
+ * Declarar cuatro variables de tipo entero A, B, C y D y asignarle un valor diferente a cada
+ * una. A continuación, realizar las instrucciones necesarias para que: B tome el valor de C, C
+ * tome el valor de A, A tome el valor de D y D tome el valor de B. Mostrar los valores
+ * iniciales y los valores finales de cada variable. Utilizar sólo una variable auxiliar.
+ */
+public class Ejercicio2_Extras {
+
+    public static void main(String[] args) {
+        int A = 1;
+        int B = 2;
+        int C = 3;
+        int D = 4;
+
+        System.out.println(A + " " + B + " " + C + " " + D);
+        int X = B;
+        B = C;
+        C = A;
+        A = D;
+        D = X;
+
+        System.out.println(A+ " "+ B+ " "+C +" " + D);
+
+    }
+
+    private static class var {
+
+        public var() {
+        }
+    }
+}
